@@ -1,12 +1,27 @@
 import React from "react";
 import './App.css';
+import HornedBeast from "./HornedBeast";
 
 class Main extends React.Component {
   
   render() {
     return (
       <main>
-        <p>Horned Beasts</p>
+        <HornedBeast
+          title=""
+          imageUrl=""
+          description=""
+        />
+        <HornedBeast
+          title=""
+          imageUrl=""
+          description=""
+        />
+        <HornedBeast
+          title=""
+          imageUrl=""
+          description=""
+        />
       </main>
     );
   }
