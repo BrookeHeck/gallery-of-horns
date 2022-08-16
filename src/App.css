@@ -23,6 +23,15 @@ main {
   margin: 0 auto;
 }
 
+.hornedBeast {
+  border: solid black 1px;
+  margin: 5px 0;
+}
+
+.hornedBeast>* {
+  padding: 10px;
+}
+
 img {
   max-width: 500px;
   height: auto;
