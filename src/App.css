@@ -23,30 +23,6 @@ main {
   margin: 0 auto;
 }
 
-.hornedBeast {
-  border: solid black 1px;
-  margin: 5px 0;
-}
-
-.vote {
-  padding: 5px;
-  margin: 5px;
-  background-color: lightblue;
-  border-radius: 5px;
-  width: fit-content;
-}
-
-.vote:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-img {
-  max-width: 500px;
-  height: auto;
-  object-fit: contain;
-}
-
 footer {
   background-color: lightblue;
   max-width: 800px;

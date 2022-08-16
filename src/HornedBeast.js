@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import './HornedBeast.css';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -15,8 +15,8 @@ class HornedBeast extends React.Component {
     return (
       <>
         <section className="hornedBeast">
-          <h2>{this.props.title}</h2>
-          <p className="vote" onClick={this.handleVote}>Vote <span>{this.state.votes}</span></p>          
+          <h2>{this.props.title} <sup>{this.state.votes}</sup></h2>
+          <p className="vote" onClick={this.handleVote}>Vote</p>          
           <img src={this.props.imageUrl} alt={this.props.imageAlt} title={this.props.imageAlt}></img>
           <p>{this.props.description}</p>
         </section>
