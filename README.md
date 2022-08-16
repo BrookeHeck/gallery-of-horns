@@ -23,10 +23,10 @@ Finish time: 1430
 
 Actual time needed to complete: 3.5 hours
 
+\
+\
+\
 
-\
-\
-\
 
 # Getting Started with Create React App
 
