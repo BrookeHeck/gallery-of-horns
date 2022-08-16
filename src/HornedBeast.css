@@ -1,6 +1,7 @@
 .beastCard {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 10px;
+  height: 460px;
 }
 
 sup {
@@ -8,6 +9,10 @@ sup {
   background-color: lightblue;
   border-radius: 50%;
   padding: 0 5px;
+}
+
+.description {
+  max-width: 300px;
 }
 
 .likeDiv {
@@ -23,8 +28,8 @@ sup {
   transform: scale(1.1);
 }
 
-img {
-  max-width: 300px;
-  height: auto;
-  object-fit: fill;
+.beastImg {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
 }
