@@ -37,10 +37,10 @@ class Main extends React.Component {
       <main>
         {this.beastArr.map(beast => (
           <HornedBeast
-          title={`${beast.title}`}
-          imageUrl={`${beast.image_url}`}
-          imageAlt={`${beast.description}`}
-          description={`${beast.description}`}
+          title={beast.title}
+          imageUrl={beast.image_url}
+          imageAlt={beast.description}
+          description={beast.description}
         />
         ))}
       </main>
