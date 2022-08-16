@@ -28,8 +28,17 @@ main {
   margin: 5px 0;
 }
 
-.hornedBeast>* {
-  padding: 10px;
+.vote {
+  padding: 5px;
+  margin: 5px;
+  background-color: lightblue;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.vote:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 img {

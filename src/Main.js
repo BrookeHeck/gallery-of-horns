@@ -8,12 +8,13 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-        {data.map(beast => (
+        {data.map((beast, idx) => (
           <HornedBeast
           title={beast.title}
           imageUrl={beast.image_url}
           imageAlt={beast.description}
           description={beast.description}
+          key={idx}
         />
         ))}
       </main>
