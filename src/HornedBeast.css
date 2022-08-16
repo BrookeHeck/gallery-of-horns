@@ -1,11 +1,6 @@
-.hornedBeast {
-  border: solid black 1px;
-  margin: 15px 0;
-}
-
-.hornedBeast>* {
-  padding-left: 10px;
-  padding-right: 10px;
+.beastCard {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 sup {
@@ -15,7 +10,7 @@ sup {
   padding: 0 5px;
 }
 
-.vote {
+.likeDiv {
   padding: 5px;
   margin:10px;
   background-color: lightblue;
@@ -23,13 +18,13 @@ sup {
   width: fit-content;
 }
 
-.vote:hover {
+.likeDiv:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 img {
-  max-width: 500px;
+  max-width: 300px;
   height: auto;
-  object-fit: contain;
+  object-fit: fill;
 }

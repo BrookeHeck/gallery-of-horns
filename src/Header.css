@@ -1,0 +1,11 @@
+header {
+  background-color: lightblue;
+  max-width: 1200px;
+  height: 3rem;
+  margin: 0 auto;
+}
+
+h1 {
+  width: fit-content;
+  margin: 10px auto;
+}

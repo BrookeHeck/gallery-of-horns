@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import './Main.css';
 import HornedBeast from "./HornedBeast";
 import data from "./data.json"
 
