@@ -1,3 +1,33 @@
+# Code301 Lab Week 1
+
+## Gallery of Horns
+
+I built an app that displays different types of horned animals. Each animal has an image and description. Users can like each animal and the total number of likes are displayed.
+
+### Author: Brooke Heck
+
+### Links and Resources
+* [GitHub Repo](https://github.com/BrookeHeck/gallery-of-horns)
+* [Deployed Site](https://app.netlify.com/sites/cerulean-alpaca-06bb83)
+
+### Reflections and Comments
+***Lab 02 Planning***
+
+Number and name of feature: Use data from a JSON file and add Bootstrap styling
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 1100
+
+Finish time: 1430
+
+Actual time needed to complete: 3.5 hours
+
+\
+\
+\
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
