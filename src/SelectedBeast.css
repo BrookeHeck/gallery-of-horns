@@ -4,3 +4,7 @@ img {
   object-fit: contain;
   margin: 0 auto;
 }
+
+img:hover {
+  cursor:pointer;
+}
