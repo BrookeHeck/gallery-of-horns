@@ -5,11 +5,13 @@ import Footer from "./Footer";
 import './App.css';
 import data from "./data.json"
 import SelectedBeast from "./SelectedBeast";
+import FilterForm from "./FilterForm";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      filteredData: data,
       showBeast: false,
       title: '',
       url: '',
@@ -29,13 +31,25 @@ class App extends React.Component {
   handleModalClose = () => {
     this.setState({showBeast: false})
   }
+
+  handleSearch = inputString => {
+    console.log(inputString);
+    if(inputString !== '') {
+      this.setState({
+        filteredData: data.filter(beast => beast.title.includes(inputString))
+      });
+    } else if(inputString === '') {
+      this.setState({filteredData: data})
+    }
+  }
   
   render() {
     return (
       <>
         <Header/>
+        <FilterForm handleSearch={this.handleSearch}/>
         <Main
-          data={data}
+          data={this.state.filteredData}
           handleBeastSelect={this.handleBeastSelect}
         />
         <SelectedBeast 
