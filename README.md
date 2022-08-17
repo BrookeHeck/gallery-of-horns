@@ -23,9 +23,21 @@ Finish time: 1430
 
 Actual time needed to complete: 3.5 hours
 
-\
-\
-\
+<br/>
+
+***Lab 03 Planning***
+
+Number and name of feature: Add a Modal for a clicked image
+
+Estimate of time needed to complete: 3 hrs
+
+Start time: 1030
+
+Finish time: 1330
+
+Actual time needed to complete: 3hrs
+
+<br/><br/>
 
 
 # Getting Started with Create React App
