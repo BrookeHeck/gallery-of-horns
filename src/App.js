@@ -33,12 +33,20 @@ class App extends React.Component {
   }
 
   handleSearch = inputString => {
-    console.log(inputString);
     if(inputString !== '') {
       this.setState({
-        filteredData: data.filter(beast => beast.title.includes(inputString))
+        filteredData: data.filter(beast => beast.title.toLowerCase().includes(inputString.toLowerCase()))
       });
     } else if(inputString === '') {
+      this.setState({filteredData: data})
+    }
+  }
+
+  handleHornSearch = (hornsSelected) => {
+    console.log(hornsSelected);
+    if(hornsSelected !== 0) {
+      this.setState({filteredData: data.filter(beast => beast.horns === hornsSelected)})
+    } else {
       this.setState({filteredData: data})
     }
   }
@@ -47,7 +55,10 @@ class App extends React.Component {
     return (
       <>
         <Header/>
-        <FilterForm handleSearch={this.handleSearch}/>
+        <FilterForm 
+          handleSearch={this.handleSearch}
+          handleHornSearch={this.handleHornSearch}
+        />
         <Main
           data={this.state.filteredData}
           handleBeastSelect={this.handleBeastSelect}
