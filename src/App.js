@@ -33,7 +33,6 @@ class App extends React.Component {
   }
 
   handleSearch = inputString => {
-    console.log(inputString);
     if(inputString !== '') {
       this.setState({
         filteredData: data.filter(beast => beast.title.includes(inputString))
@@ -42,12 +41,23 @@ class App extends React.Component {
       this.setState({filteredData: data})
     }
   }
+
+  handleHornSearch = (hornsSelected) => {
+    if(hornsSelected === 1 || hornsSelected === 2 || hornsSelected === 3) {
+      this.setState({filteredData: data.filter(beast => beast.horns === hornsSelected)})
+    } else {
+      this.setState({filteredData: data})
+    }
+  }
   
   render() {
     return (
       <>
         <Header/>
-        <FilterForm handleSearch={this.handleSearch}/>
+        <FilterForm 
+          handleSearch={this.handleSearch}
+          handleHornSearch={this.handleHornSearch}
+        />
         <Main
           data={this.state.filteredData}
           handleBeastSelect={this.handleBeastSelect}
