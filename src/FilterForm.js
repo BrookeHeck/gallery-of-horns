@@ -23,8 +23,10 @@ class FilterForm extends React.Component {
     return (
       <Form className="searchForm">
         <Form.Group className="mb-3">
-          <Form.Control type="text" placeholder="Search" onChange={this.handleEnteredSearch}/>
-          <Form.Select aria-label="Default select example" onChange={this.handleHornFilter}>
+          <Form.Label htmlFor="search">Search: </Form.Label>
+          <Form.Control type="text" name="search" placeholder="Search" onChange={this.handleEnteredSearch}/>
+          <Form.Label htmlFor="hornSelect">Number of Horns: </Form.Label>
+          <Form.Select name="hornSelect" aria-label="Default select example" onChange={this.handleHornFilter}>
             <option value="0">Search by Number of Horns</option>
             <option value="1">One</option>
             <option value="2">Two</option>
