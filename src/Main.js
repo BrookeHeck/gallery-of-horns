@@ -13,7 +13,7 @@ class Main extends React.Component {
             imageUrl={beast.image_url}
             imageAlt={beast.description}
             description={beast.description}
-            key={idx}
+            key={beast._id}
             handleBeastSelect={this.props.handleBeastSelect}
           />
         ))}
