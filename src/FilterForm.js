@@ -24,9 +24,9 @@ class FilterForm extends React.Component {
       <Form className="searchForm">
         <Form.Group className="mb-3">
           <Form.Label htmlFor="search">Search: </Form.Label>
-          <Form.Control type="text" name="search" placeholder="Search" onChange={this.handleEnteredSearch}/>
+          <Form.Control type="text" id="search" placeholder="Search" onChange={this.handleEnteredSearch}/>
           <Form.Label htmlFor="hornSelect">Number of Horns: </Form.Label>
-          <Form.Select name="hornSelect" aria-label="Default select example" onChange={this.handleHornFilter}>
+          <Form.Select id="hornSelect" aria-label="Default select example" onChange={this.handleHornFilter}>
             <option value="0">Search by Number of Horns</option>
             <option value="1">One</option>
             <option value="2">Two</option>
